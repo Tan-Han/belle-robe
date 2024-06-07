@@ -36,7 +36,7 @@
                     <?php while ($contactLoop->have_posts()):
                         $contactLoop->the_post() ?>
 
-                        <p><a href="tel:<?php the_field('phone_number') ?>">
+                        <p class="footer-phone"><a href="tel:<?php the_field('phone_number') ?>">
                                 +45 <?php the_field('phone_number') ?>
                             </a></p>
 
