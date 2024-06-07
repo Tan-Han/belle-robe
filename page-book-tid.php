@@ -63,7 +63,8 @@
 
                     <div class="img-box">
                         <img class="booking-img"
-                            src="<?php echo esc_url($bookingOutlet['dress_img']['sizes']['medium']); ?>" alt="<?php echo $image["alt"] ?>">
+                            src="<?php echo esc_url($bookingOutlet['dress_img']['sizes']['medium']); ?>"
+                            alt="<?php echo $image["alt"] ?>">
                     </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
@@ -110,7 +111,8 @@
 
                     <div class="img-box">
                         <img class="booking-img"
-                            src="<?php echo esc_url($bookingGallaDress['dress_img']['sizes']['medium']); ?>" alt="<?php echo $image["alt"] ?>">
+                            src="<?php echo esc_url($bookingGallaDress['dress_img']['sizes']['medium']); ?>"
+                            alt="<?php echo $image["alt"] ?>">
                     </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
@@ -157,7 +159,8 @@
 
                     <div class="img-box">
                         <img class="booking-img"
-                            src="<?php echo esc_url($bookingGallaGroup['dress_img']['sizes']['medium']); ?>" alt="<?php echo $image["alt"] ?>">
+                            src="<?php echo esc_url($bookingGallaGroup['dress_img']['sizes']['medium']); ?>"
+                            alt="<?php echo $image["alt"] ?>">
                     </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
@@ -204,7 +207,8 @@
 
                     <div class="img-box">
                         <img class="booking-img"
-                            src="<?php echo esc_url($bookingDressPickup['dress_img']['sizes']['medium']); ?>" alt="<?php echo $image["alt"] ?>">
+                            src="<?php echo esc_url($bookingDressPickup['dress_img']['sizes']['medium']); ?>"
+                            alt="<?php echo $image["alt"] ?>">
                     </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
@@ -251,7 +255,8 @@
 
                     <div class="img-box">
                         <img class="booking-img"
-                            src="<?php echo esc_url($bookingConfirmationDress['dress_img']['sizes']['medium']); ?>" alt="<?php echo $image["alt"] ?>">
+                            src="<?php echo esc_url($bookingConfirmationDress['dress_img']['sizes']['medium']); ?>"
+                            alt="<?php echo $image["alt"] ?>">
                     </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">

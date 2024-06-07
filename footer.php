@@ -3,8 +3,8 @@
     <div class="footer_columns">
 
         <div class="footer_contact">
-            <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/bellerobe_u_cirkel.svg" alt="Belle Robe logo"
-                class="footer_logo">
+            <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/bellerobe_u_cirkel.svg"
+                alt="Belle Robe logo" class="footer_logo">
 
             <?php $addressLoop = new WP_Query(
                 array(
@@ -26,6 +26,24 @@
                 </div>
 
                 <div class="contact_footer">
+                    <?php $contactLoop = new WP_Query(
+                        array(
+                            "post_type" => "address",
+                            "posts_per_page" => -1,
+                        )
+                    ) ?>
+
+                    <?php while ($contactLoop->have_posts()):
+                        $contactLoop->the_post() ?>
+
+                        <p><a href="tel:<?php the_field('phone_number') ?>">
+                                +45 <?php the_field('phone_number') ?>
+                            </a></p>
+
+                    <?php endwhile ?>
+
+                    <?php wp_reset_postdata() ?>
+
                     <a href="/booking/">
                         <button>Kontakt os</button>
                     </a>
@@ -38,10 +56,11 @@
         </div>
 
         <div class="footer_cat_links">
-            <a href="/brudekjoler/">Brudekjoler</a>
-            <a href="/gallakjoler/">Fest- & Gallakjoler</a>
-            <a href="/konfirmationskjoler/">Konfirmationskjoler</a>
-            <a href="/sko/">Sko</a>
+            <a href="/vare-kategori/brudekjoler/">Brudekjoler</a>
+            <a href="/vare-kategori/gallakjoler/">Fest- & Gallakjoler</a>
+            <a href="/vare-kategori/konfirmationskjoler/">Konfirmationskjoler</a>
+            <a href="/vare-kategori/sko-tilbehor/sko/">Sko</a>
+            <a href="/vare-kategori/sko-tilbehor/tilbehor/">Tilbehør</a>
         </div>
 
         <div class="footer_info_links">
