@@ -34,7 +34,7 @@
 
 
         <!--first card-->
-        <a href="/product-category/brudekjoler/">
+        <a href="/vare-kategori/brudekjoler/">
           <div class="frontpage_cards">
             <p class="p_cards">Brudekjoler</p>
             <?php $image = get_field("brudekjole_card_image") ?>
@@ -43,7 +43,7 @@
         </a>
 
         <!--second card-->
-        <a href="/product-category/gallakjoler/">
+        <a href="/vare-kategori/gallakjoler/">
           <div class="frontpage_cards">
             <p class="p_cards">Fest- & gallekjoler</p>
             <?php $image = get_field("galla_og_festkjoler_card_image") ?>
@@ -52,7 +52,7 @@
         </a>
 
         <!--third card-->
-        <a href="/product-category/konfirmationskjoler/">
+        <a href="/vare-kategori/konfirmationskjoler/">
           <div class="frontpage_cards">
             <p class="p_cards">Konfirmationskjoler</p>
             <?php $image = get_field("konfirmationskjoler_card_image") ?>
@@ -61,7 +61,7 @@
         </a>
 
         <!--fourth card-->
-        <a href="/product-category/sko/">
+        <a href="/vare-kategori/sko-tilbehor/sko/">
           <div class="frontpage_cards">
             <p class="p_cards">Sko & tilbehør</p>
             <?php $image = get_field("sko_og_tilbehor_card_image") ?>
