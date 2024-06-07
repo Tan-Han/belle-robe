@@ -268,13 +268,19 @@ footer {
   display: flex;
 }
 
+.footer-phone,
 .address_footer,
 .footer_cat_links,
 .footer_info_links {
   font-size: 16px;
 }
 
-.footer_contact,
+.contact_footer {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
 .footer_cat_links,
 .footer_info_links,
 .footer_follow {
