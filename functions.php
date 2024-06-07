@@ -1,7 +1,7 @@
 <?php
 function enqueue_parent_theme_style()
 {
-  wp_enqueue_style("bellerobe-style", get_template_directory_uri() . "/style.css"); // Linking stylesheets
+  wp_enqueue_style("belle-robe-style", get_template_directory_uri() . "/style.css"); // Linking stylesheets
   wp_enqueue_style("adobe", "https://use.typekit.net/slb7mne.css"); // Linking Adobe fonts
 }
 add_action('wp_enqueue_scripts', 'enqueue_parent_theme_style');
