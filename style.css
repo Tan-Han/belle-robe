@@ -454,6 +454,19 @@ footer {
   background-color: var(--forms);
 }
 
+.select2-container--classic.select2-container--open .select2-dropdown {
+  border-color: var(--quaternary-color);
+}
+
+.select2-container--classic .select2-dropdown {
+  background-color: var(--forms);
+  color: var(--brown);
+}
+
+.select2-container--classic .select2-results__option--highlighted[aria-selected] {
+  background-color: var(--tertiary-color);
+  color: var(--white);
+
 /* .wp-block-woocommerce-filter-wrapper {
   flex: 0 0 200px;
 }
