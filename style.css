@@ -434,12 +434,15 @@ footer {
 .select2-container--classic .select2-selection--single {
   border-color: var(--quaternary-color) !important;
   background-color: var(--forms);
+  border-radius: 10px;
 }
 
 .select2-container--classic .select2-selection--single .select2-selection__arrow {
   background: var(--quaternary-color);
   color: var(--white);
   border-color: var(--quaternary-color) !important;
+  border-radius: 0 10px 10px 0;
+  border-right: 2px solid;
 }
 
 .select2-container--classic .select2-selection--single .select2-selection__arrow b {
@@ -452,10 +455,12 @@ footer {
   border-color: var(--quaternary-color);
   color: var(--brown);
   background-color: var(--forms);
+  border-radius: 10px;
 }
 
 .select2-container--classic.select2-container--open .select2-dropdown, .select2-container--classic.select2-container--open .select2-selection--multiple {
   border-color: var(--quaternary-color);
+  border-radius: 10px;
 }
 
 .select2-container--classic .select2-dropdown {
