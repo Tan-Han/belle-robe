@@ -454,7 +454,7 @@ footer {
   background-color: var(--forms);
 }
 
-.select2-container--classic.select2-container--open .select2-dropdown {
+.select2-container--classic.select2-container--open .select2-dropdown, .select2-container--classic.select2-container--open .select2-selection--multiple {
   border-color: var(--quaternary-color);
 }
 
