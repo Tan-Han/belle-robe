@@ -88,7 +88,7 @@ add_action("woocommerce_before_shop_loop", "add_category_title_with_description"
 // {
 //   echo '<button class="filter-button" onclick="toggleProductFilter()">Filter</button>';
 //   echo '<div class="product_filter" id="productFilter">';
-//   dynamic_sidebar("product_filter");
+//   echo do_shortcode('[br_filters_group group_id=614]');
 //   echo '</div>';
 // }
 
@@ -97,11 +97,15 @@ add_action("woocommerce_before_shop_loop", "add_category_title_with_description"
 
 // PRODUCT FILTER - ADVANCED AJAX PRODUCT FILTER
 
-function print_product_filter() {
+function print_product_filter_widget()
+{
+  echo '<button class="filter-button" onclick="toggleProductFilter()">Filter</button>';
+  echo '<div class="product_filter" id="productFilter">';
   echo do_shortcode('[br_filters_group group_id=614]');
+  echo '</div>';
 }
 
-add_action("woocommerce_before_shop_loop", "print_product_filter");
+add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
 
 // Adding item count to add-to-basket button
 
