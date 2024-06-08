@@ -320,6 +320,10 @@ footer {
   box-shadow: 3px 3px 5px #52443B7D;
 }
 
+.fa-facebook-f::before {
+  content: "\f39e" !important;
+}
+
 .facebook:hover,
 .instagram:hover,
 .tiktok:hover {
@@ -436,7 +440,7 @@ footer {
   background: var(--quaternary-color);
   color: var(--white);
   border-radius: 0 10px 10px 0;
-  border-color: var(--quaternary-color)!important;
+  border-color: var(--quaternary-color) !important;
 }
 
 .select2-container--classic .select2-selection--single .select2-selection__arrow b {
