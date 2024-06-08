@@ -395,12 +395,16 @@ footer {
 .product_filter {
   display: flex;
   justify-content: left;
-  gap: 1rem;
+  gap: 2.5rem;
   padding: 1rem 0;
   flex-wrap: wrap;
 }
 
-.wp-block-woocommerce-filter-wrapper {
+.product_filter_ajax {
+  width: 10rem;
+}
+
+/* .wp-block-woocommerce-filter-wrapper {
   flex: 0 0 200px;
 }
 
@@ -482,7 +486,7 @@ footer {
 .product_filter .components-button svg {
   background-color: transparent !important;
   border-radius: 0 !important;
-}
+} */
 
 /* Sorting */
 
