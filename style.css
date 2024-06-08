@@ -431,7 +431,6 @@ footer {
 }
 
 .select2-container--classic .select2-selection--single {
-  border-radius: 10px;
   border-color: var(--quaternary-color) !important;
   background-color: var(--forms);
 }
@@ -439,7 +438,6 @@ footer {
 .select2-container--classic .select2-selection--single .select2-selection__arrow {
   background: var(--quaternary-color);
   color: var(--white);
-  border-radius: 0 10px 10px 0;
   border-color: var(--quaternary-color) !important;
 }
 
