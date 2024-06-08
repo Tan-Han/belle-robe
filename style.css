@@ -450,6 +450,8 @@ footer {
 
 .select2-container--classic .select2-selection--multiple {
   border-color: var(--quaternary-color);
+  color: var(--brown);
+  background-color: var(--forms);
 }
 
 /* .wp-block-woocommerce-filter-wrapper {
