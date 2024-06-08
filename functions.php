@@ -67,33 +67,41 @@ function add_category_title_with_description() {
 
 add_action("woocommerce_before_shop_loop", "add_category_title_with_description");
 
-// Creating new custom widget
-function product_filter_widget()
-{
-  register_sidebar(
-    array(
-      "name" => "Produkt filter",
-      "id" => "product_filter",
-      "before_widget" => "",
-      "after_widget" => ""
-    )
-  );
+// // Creating new custom widget
+// function product_filter_widget()
+// {
+//   register_sidebar(
+//     array(
+//       "name" => "Produkt filter",
+//       "id" => "product_filter",
+//       "before_widget" => "",
+//       "after_widget" => ""
+//     )
+//   );
+// }
+
+// add_action("widgets_init", "product_filter_widget");
+
+// // Placing the custom widget
+
+// function print_product_filter_widget()
+// {
+//   echo '<button class="filter-button" onclick="toggleProductFilter()">Filter</button>';
+//   echo '<div class="product_filter" id="productFilter">';
+//   dynamic_sidebar("product_filter");
+//   echo '</div>';
+// }
+
+// add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
+
+
+// PRODUCT FILTER - ADVANCED AJAX PRODUCT FILTER
+
+function print_product_filter() {
+  echo do_shortcode('[br_filters_group group_id=614]');
 }
 
-add_action("widgets_init", "product_filter_widget");
-
-// Placing the custom widget
-
-function print_product_filter_widget()
-{
-  echo '<button class="filter-button" onclick="toggleProductFilter()">Filter</button>';
-  echo '<div class="product_filter" id="productFilter">';
-  dynamic_sidebar("product_filter");
-  echo '</div>';
-}
-
-add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
-
+add_action("woocommerce_before_shop_loop", "print_product_filter");
 
 // Adding item count to add-to-basket button
 
