@@ -466,6 +466,7 @@ footer {
 .select2-container--classic .select2-results__option--highlighted[aria-selected] {
   background-color: var(--tertiary-color);
   color: var(--white);
+}
 
 /* .wp-block-woocommerce-filter-wrapper {
   flex: 0 0 200px;
