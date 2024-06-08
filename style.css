@@ -404,6 +404,17 @@ footer {
   width: 10rem;
 }
 
+/* Filter name */ .bapf_head {
+  color: var(--brown);
+  font-size: 16px;
+}
+
+.bapf_body .selection {
+  border-radius: 10px;
+  border-color: var(--quaternary-color) !important;
+  background-color: var(--forms);
+}
+
 /* .wp-block-woocommerce-filter-wrapper {
   flex: 0 0 200px;
 }
