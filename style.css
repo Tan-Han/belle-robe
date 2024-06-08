@@ -404,16 +404,45 @@ footer {
   width: 10rem;
 }
 
-/* Filter name */ .bapf_head {
+.bapf_head {
   color: var(--brown);
   font-size: 16px;
 }
 
-.bapf_body .selection {
+.bapf_body {
+  font-size: 16px;
+}
+
+/* Price slider */
+.bapf_slidr_main.ui-widget-content {
+  background-color: var(--secondary-color);
+}
+
+.bapf_slidr_main.ui-widget-content .ui-slider-range {
+  background-color: var(--tertiary-color);
+}
+
+.bapf_slidr_main.ui-widget-content .ui-slider-handle {
+  background-color: #556E5C;
+}
+
+.select2-container--classic .select2-selection--single {
   border-radius: 10px;
   border-color: var(--quaternary-color) !important;
   background-color: var(--forms);
 }
+
+.select2-container--classic .select2-selection--single .select2-selection__arrow {
+  background: var(--quaternary-color);
+  color: var(--white);
+  border-radius: 0 10px 10px 0;
+  border-color: var(--quaternary-color)!important;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__arrow b {
+  border-color: var(--white) transparent;
+}
+
 
 /* .wp-block-woocommerce-filter-wrapper {
   flex: 0 0 200px;
