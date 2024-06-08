@@ -430,6 +430,7 @@ footer {
   background-color: #556E5C;
 }
 
+/* Dropdown filter */
 .select2-container--classic .select2-selection--single {
   border-color: var(--quaternary-color) !important;
   background-color: var(--forms);
@@ -445,6 +446,11 @@ footer {
   border-color: var(--white) transparent;
 }
 
+/* Dropdown - choose multiple filter */
+
+.select2-container--classic .select2-selection--multiple {
+  border-color: var(--quaternary-color);
+}
 
 /* .wp-block-woocommerce-filter-wrapper {
   flex: 0 0 200px;
