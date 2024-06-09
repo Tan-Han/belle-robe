@@ -44,7 +44,7 @@ add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
 // Adding title to category pages
 function add_category_title_with_description() {
   ?>
-  <div class="category-description">
+  <div class="category-description-outer">
       <h1 class="category-title">
           <?php single_term_title() ?>
       </h1>
@@ -55,7 +55,7 @@ function add_category_title_with_description() {
       // Display the category description if available
       if ($category && !empty($category->description)) {
           ?>
-          <div class="category-description-inner">
+          <div class="category-description">
               <?php echo wpautop($category->description); ?>
           </div>
           <?php
