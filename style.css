@@ -386,6 +386,7 @@ footer {
 .empty-outer {
   display: flex;
   justify-content: center;
+  padding-top: 1rem;
 }
 
 .empty-cat-box {
