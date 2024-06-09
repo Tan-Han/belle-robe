@@ -368,8 +368,18 @@ footer {
   padding-bottom: .5rem;
 }
 
-.category-description {
+.category-description, .category-description-inner {
   padding-bottom: 1.5rem;
+}
+
+.category-description-inner {
+display: flex;
+justify-content: center;
+}
+
+.category-description-inner p {
+  width: 50%;
+  text-align: center;
 }
 
 .empty-cat-box {

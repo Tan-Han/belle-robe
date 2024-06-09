@@ -55,7 +55,7 @@ function add_category_title_with_description() {
       // Display the category description if available
       if ($category && !empty($category->description)) {
           ?>
-          <div class="category-description">
+          <div class="category-description-inner">
               <?php echo wpautop($category->description); ?>
           </div>
           <?php
