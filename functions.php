@@ -141,4 +141,3 @@ function remove_add_to_cart_button() {
   }
 }
 add_action( 'woocommerce_single_product_summary', 'remove_add_to_cart_button', 1 );
-

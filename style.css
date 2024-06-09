@@ -383,6 +383,11 @@ footer {
   text-align: center;
 }
 
+.empty-outer {
+  display: flex;
+  justify-content: center;
+}
+
 .empty-cat-box {
   background-color: var(--quinary-color);
   color: var(--brown);
