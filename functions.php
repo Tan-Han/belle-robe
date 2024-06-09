@@ -42,25 +42,26 @@ function insert_product_title()
 add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
 
 // Adding title to category pages
-function add_category_title_with_description() {
+function add_category_title_with_description()
+{
   ?>
   <div class="category-description-outer">
-      <h1 class="category-title">
-          <?php single_term_title() ?>
-      </h1>
-      <?php
-      // Get the current category object
-      $category = get_queried_object();
+    <h1 class="category-title">
+      <?php single_term_title() ?>
+    </h1>
+    <?php
+    // Get the current category object
+    $category = get_queried_object();
 
-      // Display the category description if available
-      if ($category && !empty($category->description)) {
-          ?>
-          <div class="category-description">
-              <?php echo wpautop($category->description); ?>
-          </div>
-          <?php
-      }
+    // Display the category description if available
+    if ($category && !empty($category->description)) {
       ?>
+      <div class="category-description">
+        <?php echo wpautop($category->description); ?>
+      </div>
+      <?php
+    }
+    ?>
   </div>
   <?php
 }
@@ -86,10 +87,10 @@ add_action("woocommerce_before_shop_loop", "add_category_title_with_description"
 
 // function print_product_filter_widget()
 // {
-//   echo '<button class="filter-button" onclick="toggleProductFilter()">Filter</button>';
-//   echo '<div class="product_filter" id="productFilter">';
-//   echo do_shortcode('[br_filters_group group_id=614]');
-//   echo '</div>';
+// echo '<button class="filter-button" onclick="toggleProductFilter()">Filter</button>';
+// echo '<div class="product_filter" id="productFilter">';
+// dynamic_sidebar("product_filter");
+// echo '</div>';
 // }
 
 // add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
@@ -125,19 +126,20 @@ function count_item_in_cart()
 
 // REMOVE ADD TO CART BUTTON FROM PRODUCTS IN CERTAIN CATEGORIES
 
-function remove_add_to_cart_button() {
+function remove_add_to_cart_button()
+{
   // Check if we're on a single product page
-  if ( is_product() ) {
-      // Get the current product ID
-      $product_id = get_the_ID();
-      
-      // Check if the product is in the "Only in physical store" or "Dresses only in physical store" category
-      if ( has_term( array('kun-fysisk-brudekjoler', 'kun-fysisk-gallakjoler', 'kun-fysisk-konfirmationskjoler', 'kun-fysisk-sko-tilbehor'), 'product_cat', $product_id ) ) {
-          // Remove the add to cart button
-          remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
-          // Optionally, you can add custom CSS to hide the button completely
-          echo '<style>.single_add_to_cart_button { display: none; }</style>';
-      }
+  if (is_product()) {
+    // Get the current product ID
+    $product_id = get_the_ID();
+
+    // Check if the product is in the "Only in physical store" or "Dresses only in physical store" category
+    if (has_term(array('kun-fysisk-brudekjoler', 'kun-fysisk-gallakjoler', 'kun-fysisk-konfirmationskjoler', 'kun-fysisk-sko-tilbehor'), 'product_cat', $product_id)) {
+      // Remove the add to cart button
+      remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+      // Optionally, you can add custom CSS to hide the button completely
+      echo '<style>.single_add_to_cart_button { display: none; }</style>';
+    }
   }
 }
-add_action( 'woocommerce_single_product_summary', 'remove_add_to_cart_button', 1 );
+add_action('woocommerce_single_product_summary', 'remove_add_to_cart_button', 1);
