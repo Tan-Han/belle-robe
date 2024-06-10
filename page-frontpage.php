@@ -401,6 +401,7 @@
 
   .parking_box {
     display: flex;
+    padding-top: .5rem;
   }
 
   @media screen and (max-width: 2000px) {

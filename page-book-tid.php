@@ -436,6 +436,11 @@
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+                    <div class="parking_box">
+                        <b>Parkering:&nbsp;</b>
+                        <p><?php the_field('parkering') ?></p>
+                    </div>
+
                 <?php endwhile ?>
 
                 <?php wp_reset_postdata() ?>
@@ -850,6 +855,11 @@
         box-shadow: 3px 3px 5px #5C48337D;
         height: 350px;
         width: 100%;
+    }
+
+    .parking_box {
+        display: flex;
+        padding-top: .5rem;
     }
 
     /* Media queries */
