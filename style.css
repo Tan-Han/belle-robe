@@ -509,7 +509,6 @@ footer {
 .select2-container--classic .select2-dropdown {
   background-color: var(--forms);
   color: var(--brown);
-  border: none;
 }
 
 .select2-container--classic .select2-results__option--highlighted[aria-selected] {
