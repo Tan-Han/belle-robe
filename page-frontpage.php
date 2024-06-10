@@ -394,7 +394,7 @@
     border-radius: 10px;
     border: none !important;
     box-shadow: 3px 3px 5px #52443B7D;
-    height: 415px;
+    height: 382px;
     width: 100%;
     margin-top: 18px;
   }
