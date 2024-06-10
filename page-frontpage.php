@@ -167,7 +167,7 @@
               referrerpolicy="no-referrer-when-downgrade"></iframe>
 
               <div class="parking_box">
-                <b>Parkering: </b>
+                <b>Parkering:&nbsp;</b>
                 <p><?php the_field('parkering') ?></p>
               </div>
           <?php endwhile ?>
