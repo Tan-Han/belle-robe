@@ -434,6 +434,10 @@ footer {
   font-size: 16px;
 }
 
+#bapf_8_44 {
+  border-color: var(--quaternary-color);
+}
+
 /* Price slider */
 .bapf_slidr_main.ui-widget-content {
   background-color: var(--secondary-color);
@@ -484,10 +488,12 @@ footer {
   color: var(--brown);
   background-color: var(--forms);
   border-radius: 10px;
+  width: 100%;
 }
 
 .select2-container--classic .select2-selection--multiple .select2-selection__rendered {
   padding: 0 10px;
+  width: inherit;
 }
 
 .select2-container--classic.select2-container--open .select2-dropdown,
