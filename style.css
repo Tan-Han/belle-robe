@@ -516,6 +516,17 @@ footer {
   color: var(--white);
 }
 
+.select2-container--classic .select2-selection--multiple .select2-selection__choice {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--tertiary-color);
+  padding: 0 0.2rem !important;
+  color: var(--brown);
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove {
+  color: var(--brown);
+}
+
 /* .wp-block-woocommerce-filter-wrapper {
   flex: 0 0 200px;
 }
