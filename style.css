@@ -1685,6 +1685,10 @@ footer {
   .single-product .product .onsale {
     left: -12.5rem;
   }
+
+  .category-description p {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 1550px) {
@@ -1781,6 +1785,10 @@ footer {
   .wp-block-woocommerce-filled-cart-block table thead span,
   .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wc-block-cart__totals-title {
     font-size: 14px;
+  }
+
+  .category-description p {
+    width: 85%;
   }
 }
 
@@ -2042,6 +2050,10 @@ footer {
 }
 
 @media (max-width: 1050px) {
+
+  .category-description p {
+    width: 100%;
+  }
 
   .products {
     grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
