@@ -902,6 +902,15 @@
         .booking-description {
             font-size: 14px;
         }
+
+        .call i {
+            font-size: 42px;
+        }
+
+        .write i {
+            font-size: 47px;
+        }
+
     }
 
     @media (max-width: 1100px) {
